@@ -120,5 +120,12 @@
       }
     }
   },
+  "schematics": {
+    "@repro/schematics:test": {
+      "obj": {
+        "some:value": {"required": "filled in"}
+      }
+    }
+  },
   "defaultProject": "repro"
 }

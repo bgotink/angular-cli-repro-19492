@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "properties": {
+    "obj": {
+      "type": "object",
+      "description": "An object",
+      "propertyNames": {
+        "pattern": "^.+:.+$"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "required": {
+              "type": "string"
+            },
+            "optional": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false,
+          "required": ["required"]
+        }
+      },
+      "default": {}
+    }
+  }
+}

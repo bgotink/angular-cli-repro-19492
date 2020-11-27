@@ -1,0 +1,14 @@
+{
+  "schematics": {
+    "test": {
+      "factory": "./test",
+      "schema": "./test/schema.json",
+      "description": "Schematic with object property"
+    },
+    "test2": {
+      "factory": "./test2",
+      "schema": "./test2/schema.json",
+      "description": "Schematic calling test"
+    }
+  }
+}
